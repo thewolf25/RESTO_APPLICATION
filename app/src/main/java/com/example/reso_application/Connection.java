@@ -15,6 +15,13 @@ public class Connection extends AppCompatActivity {
         setContentView(R.layout.activity_connection);
 
 
+        findViewById(R.id.handleConnection).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(getApplicationContext(),dashboardAdmin.class);
+                startActivity(i);
+            }
+        });
     }
 
 

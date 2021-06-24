@@ -127,12 +127,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void connect(View v , Bundle b){
-
-
-
+    public void connect(View v){
         Intent i = new Intent(this, Connection.class);
-        i.putExtras(b);
         startActivity(i);
     }
 

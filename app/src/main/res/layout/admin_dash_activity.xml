@@ -11,6 +11,7 @@
     >
 
     <LinearLayout
+        android:id="@+id/menuDashboard"
         android:layout_width="match_parent"
         android:layout_height="76dp"
         android:orientation="horizontal">
@@ -39,4 +40,10 @@
             android:backgroundTint="@color/red"
             android:text="delete" />
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/fragmentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"></LinearLayout>
 </LinearLayout>

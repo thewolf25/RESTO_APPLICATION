@@ -12,7 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Reso_Application">
         <activity android:name=".singleMeat"></activity>
-        <activity android:name=".AdminDash" />
         <activity android:name=".dashboardAdmin" />
         <activity android:name=".Connection" />
         <activity android:name=".MainActivity">
