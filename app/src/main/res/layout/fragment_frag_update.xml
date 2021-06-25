@@ -5,11 +5,61 @@
     android:layout_height="match_parent"
     tools:context=".frag_update">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="UpdateFragments"
-        android:textSize="28dp" />
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/Produit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Taper le nom de Produit"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="taper le prix !!"
+            android:inputType="textPersonName" />
+
+        <TextView
+            android:id="@+id/gredientSelect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="choisir gredient"
+            android:padding="12dp"
+
+            />
+
+        <Spinner
+            android:id="@+id/planets_spinner"
+            android:layout_width="fill_parent"
+            android:entries="@array/gredient"
+            android:layout_height="wrap_content"
+            />
+
+        <Spinner
+            android:id="@+id/planet1_spinner"
+            android:layout_width="match_parent"
+            android:entries="@array/gredient"
+            android:layout_height="wrap_content" />
+        <Spinner
+            android:id="@+id/planet2_spinner"
+            android:layout_width="match_parent"
+            android:entries="@array/gredient"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/Update"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Update " />
+
+
+    </LinearLayout>
 
 </FrameLayout>

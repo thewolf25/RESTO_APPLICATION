@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".delete">
+    android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <EditText
+        android:id="@+id/Produit"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="DELETE"
-        android:textSize="28sp" />
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Taper le nom de Produit"
+        android:inputType="textPersonName" />
+    <Button
+        android:id="@+id/buttonDel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="delete" />
 
-</FrameLayout>
+
+</LinearLayout>
