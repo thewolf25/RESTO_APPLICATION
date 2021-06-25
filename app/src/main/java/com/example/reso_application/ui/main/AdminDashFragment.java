@@ -26,6 +26,8 @@ public class AdminDashFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container,
                              @Nullable Bundle savedInstanceState) {
+        System.out.println("OnCreateView "+this.action);
+
         if(action.equals("ADD"))
         return inflater.inflate(R.layout.frag_add, container, false);
         else if (action.equals("UPDATE"))
@@ -35,16 +37,13 @@ public class AdminDashFragment extends Fragment {
 
     }
 
-//    @Override
-////    public void onActivityCreated(@Nullable Bundle savedInstanceState) {
-////        super.onActivityCreated(savedInstanceState);
-////        mViewModel = new ViewModelProvider(this).get(MainViewModel.class);
-////        // TODO: Use the ViewModel
-////    }
+
 
     @Override
     public void setArguments(@Nullable Bundle args) {
         super.setArguments(args);
 
+        this.action = args.getString("action");
+        System.out.println("set argument "+this.action);
     }
 }

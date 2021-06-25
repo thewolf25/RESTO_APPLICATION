@@ -37,6 +37,5 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="25dp"
         android:backgroundTint="@color/red"
-        android:onClick="connect"
         android:text="connect" />
 </LinearLayout>

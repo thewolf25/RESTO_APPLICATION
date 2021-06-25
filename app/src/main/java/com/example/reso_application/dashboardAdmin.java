@@ -15,7 +15,7 @@ public class dashboardAdmin extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.admin_dash_activity);
-        insertFragment("UPDATE");
+        insertFragment("ADD");
 
         findViewById(R.id.addButton).setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,6 +34,7 @@ public class dashboardAdmin extends AppCompatActivity {
         findViewById(R.id.deleteButton).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
                 insertFragment("DELETE");
             }
         });
@@ -48,7 +49,7 @@ public class dashboardAdmin extends AppCompatActivity {
         Bundle bundle = new Bundle();
         bundle.putString("action", action);
         fragment.setArguments(bundle);
-
+        System.out.println("*******************"+action);
         FragmentManager fragmentManager = getFragmentManager();
         FragmentTransaction transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.fragmentLayout, fragment);
